@@ -96,7 +96,7 @@ function card(el){
   return `
     <div class="card">
       <div class="card_header">
-        <h1>${el.name.common} ${el.flag ? el.flag : '...'}</h1>
+        <h1>${el.name.common} ${el.flag ? el.flag : ' '}</h1>
       </div>
       <div class="card_body">
         <img class="card_img" src="${el.flags.svg}">
