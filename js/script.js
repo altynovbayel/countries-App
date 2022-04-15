@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
 $callRegions.addEventListener('click', e => {
   e.preventDefault()
 
-  $navList.classList.add('active')
+  $navList.classList.toggle('active')
 })
 
 function getBase(endPoint, cb) {
