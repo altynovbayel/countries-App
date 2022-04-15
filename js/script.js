@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
 $callRegions.addEventListener('click', e => {
   e.preventDefault()
 
-  $navList.classList.toggle('active')
+  $navList.classList.add('active')
 })
 
 function getBase(endPoint, cb) {
@@ -70,6 +70,7 @@ function routeTemplate(title, route){
 }
 
 function getRoute(route){
+  $navList.classList.remove('active')
   if (route === 'all') {
     getBase(`${endPointList.all}`, res => {
       template(res)
